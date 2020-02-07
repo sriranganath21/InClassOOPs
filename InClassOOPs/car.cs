@@ -4,14 +4,19 @@ using System.Text;
 
 namespace InClassOOPs
 {
-    public class car
+    class car
 
     {
-       string color = "red";
-       int maxSpeed = 200;          
-       public void fullThrottle()
-       {
-            Console.WriteLine("The car is going as fast as it can!");
-       }
+        public string model;
+        public string color;
+        public int year;
+
+        // Create a class constructor with multiple parameters
+        public car(string modelName, string modelColor, int modelYear)
+        {
+            model = modelName;
+            color = modelColor;
+            year = modelYear;
+        }
     }
 }
